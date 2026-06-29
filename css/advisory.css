@@ -361,4 +361,7 @@
   .record-grid { grid-template-columns: 1fr; }
   .why-me-inner { grid-template-columns: 1fr; gap: 40px; }
   .tracks-nav { flex-direction: column; }
+  .tracks-cards { grid-template-columns: 1fr; }
+  .tracks-card { padding: 36px 28px; }
+  .tracks-card-num { font-size: 48px; }
 }
