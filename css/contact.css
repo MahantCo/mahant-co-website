@@ -151,8 +151,10 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .contact-hero { min-height: auto; padding: 56px 24px 64px; }
-  .contact-hero-inner { grid-template-columns: 1fr; gap: 48px; }
-  .contact-sub { max-width: 100%; }
-  .contact-form { padding: 32px 24px; }
+  .contact-hero { min-height: auto; padding: 40px 20px 48px; }
+  .contact-hero-inner { grid-template-columns: 1fr; gap: 36px; }
+  .contact-heading { font-size: clamp(40px, 10vw, 64px); }
+  .contact-sub { max-width: 100%; font-size: 16px; margin-bottom: 32px; }
+  .contact-form { padding: 28px 20px; }
+  .contact-note { padding: 20px 20px; }
 }

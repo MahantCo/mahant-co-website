@@ -362,12 +362,20 @@
 
 /* Responsive */
 @media (max-width: 900px) {
+  .coaching-hero { padding: 40px 20px 36px; }
+  .coaching-problem { padding: 48px 20px; }
   .coaching-problem-grid { grid-template-columns: 1fr; }
   .coaching-gap-visual { display: none; }
-  .coaching-who-grid { grid-template-columns: 1fr; }
-  .coaching-arc-wrap { grid-template-columns: 1fr; }
-  .coaching-arc-svg-wrap { max-width: 320px; margin: 0 auto; }
-  .structure-grid { grid-template-columns: 1fr; }
-  .distinction-grid { grid-template-columns: 1fr; }
+  .coaching-who { padding: 48px 20px; }
+  .coaching-who-grid { grid-template-columns: 1fr; gap: 20px; }
+  .coaching-model { padding: 48px 20px; }
+  .coaching-arc-wrap { grid-template-columns: 1fr; gap: 32px; }
+  .coaching-arc-svg-wrap { max-width: 280px; margin: 0 auto; }
+  .coaching-structure { padding: 48px 20px 40px; }
+  .structure-grid { grid-template-columns: 1fr; gap: 16px; }
+  .coaching-distinction { padding: 40px 20px 48px; }
+  .distinction-grid { grid-template-columns: 1fr; gap: 16px; }
+  .coaching-credentials { padding: 48px 20px; }
   .coaching-credentials-inner { grid-template-columns: 1fr; gap: 40px; }
+  .coaching-pull-quote { padding: 28px 0 0; }
 }

@@ -357,8 +357,12 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .ba-grid { grid-template-columns: 1fr; }
-  .record-grid { grid-template-columns: 1fr; }
+  .page-hero { padding: 40px 20px 48px; }
+  .track-section { padding: 48px 20px; }
+  .track-record { padding: 48px 20px; }
+  .why-me { padding: 48px 20px; }
+  .ba-grid { grid-template-columns: 1fr; gap: 16px; }
+  .record-grid { grid-template-columns: 1fr; gap: 16px; }
   .why-me-inner { grid-template-columns: 1fr; gap: 40px; }
   .tracks-nav { flex-direction: column; }
   .tracks-cards { grid-template-columns: 1fr; }

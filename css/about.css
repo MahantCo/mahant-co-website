@@ -235,12 +235,24 @@
 
 /* Responsive */
 @media (max-width: 900px) {
-  .about-hero-inner { grid-template-columns: 1fr; }
-  .about-hero-photo { display: none; }
-  .about-opening-inner { grid-template-columns: 1fr; gap: 40px; }
+  /* Hero */
+  .about-hero { padding: 40px 20px 48px; }
+  .about-hero-inner { grid-template-columns: 1fr; gap: 32px; }
+  .about-hero-photo { display: flex; justify-content: center; order: -1; }
+  .about-photo-frame { width: 180px; height: 220px; }
+  /* Opening */
+  .about-opening { padding: 48px 20px; }
+  .about-opening-inner { grid-template-columns: 1fr; gap: 32px; }
+  /* Inside work */
+  .about-inside { padding: 48px 20px; }
   .about-inside-grid { grid-template-columns: 1fr; }
   .about-son-frame { max-width: 300px; margin: 0 auto 16px; }
   .about-son-img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: cover; object-position: center top; display: block; }
+  /* Name section */
+  .about-name { padding: 48px 20px; }
   .about-name-inner { grid-template-columns: 1fr; gap: 40px; }
+  /* Practices */
+  .about-practices { padding: 48px 20px; }
+  .about-practices-grid { grid-template-columns: 1fr; gap: 20px; }
   .about-practices-grid { grid-template-columns: 1fr; }
 }

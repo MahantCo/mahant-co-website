@@ -569,6 +569,12 @@ a { color: inherit; text-decoration: none; }
   .geo-flag { font-size: 28px; }
   .geo-city { font-size: 10px; letter-spacing: 0.1em; }
   .geo-arrow { font-size: 12px; }
+  .cta-section { padding: 56px 20px; }
+  .cta-heading { font-size: clamp(28px, 7vw, 44px); }
+  .quote-band { padding: 28px 20px; }
+  .quote-text { font-size: clamp(16px, 4vw, 22px); }
+  .footer-inner { grid-template-columns: 1fr; gap: 24px; text-align: center; }
+  .footer-links { justify-content: center; }
 }
 
 /* Mobile nav open state */
