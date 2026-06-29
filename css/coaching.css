@@ -1,0 +1,373 @@
+/* =============================================
+   COACHING PAGE — Specific Styles
+   ============================================= */
+
+.nav-active { color: var(--sage) !important; font-weight: 600; }
+
+/* Hero — override page-hero padding to be tighter */
+.coaching-hero {
+  background: #ECF0EC;
+  border-bottom: 1px solid rgba(122,81,153,0.12);
+  padding: 56px 32px 44px;
+}
+.coaching-hero .section-label { color: var(--sage); margin-bottom: 12px; }
+.coaching-hero .page-hero-heading { color: var(--ink); margin-bottom: 16px; }
+.coaching-hero .page-hero-sub { font-size: 18px; }
+
+/* Tighter quote band on coaching page */
+.coaching-hero + .quote-band {
+  padding: 24px 32px;
+}
+.coaching-hero + .quote-band .quote-text {
+  font-size: clamp(15px, 1.8vw, 19px);
+}
+
+/* Problem section */
+.coaching-problem {
+  background: var(--cream);
+  padding: 72px 32px;
+}
+.coaching-problem-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 64px;
+  align-items: center;
+  margin-top: 36px;
+}
+.coaching-body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--ink-light);
+  line-height: 1.85;
+  margin-bottom: 18px;
+}
+.coaching-body strong { color: var(--sage); font-weight: 600; }
+
+/* Gap visual */
+.coaching-gap-visual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+}
+.gap-item {
+  width: 100%;
+  padding: 22px 24px;
+  border-radius: 8px;
+  text-align: center;
+}
+.gap-item-insight {
+  background: rgba(232,130,58,0.1);
+  border: 1.5px solid rgba(232,130,58,0.3);
+}
+.gap-item-embodiment {
+  background: rgba(122,81,153,0.08);
+  border: 1.5px solid rgba(122,81,153,0.25);
+}
+.gap-item-label {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 4px;
+}
+.gap-item-insight .gap-item-label { color: var(--earth); }
+.gap-item-embodiment .gap-item-label { color: var(--sage); }
+.gap-item-desc {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--ink-light);
+  font-style: italic;
+}
+.gap-arrow-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 12px 0;
+}
+.gap-line {
+  width: 1px;
+  height: 20px;
+  background: var(--slate);
+  opacity: 0.4;
+}
+.gap-middle-label {
+  font-family: var(--font-label);
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--slate);
+}
+
+/* Who section */
+.coaching-who {
+  background: var(--sand);
+  padding: 72px 32px;
+}
+.coaching-who .section-heading {
+  max-width: 700px;
+  margin-bottom: 36px;
+}
+.coaching-who-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 32px;
+}
+.coaching-who-card {
+  background: var(--cream);
+  padding: 32px 28px;
+  border-radius: 8px;
+  border-left: 3px solid var(--sage);
+}
+.coaching-who-body {
+  font-family: var(--font-body);
+  font-size: 17px;
+  color: var(--ink-light);
+  line-height: 1.85;
+}
+
+/* Model section */
+.coaching-model {
+  background: var(--cream);
+  padding: 72px 32px;
+}
+.coaching-model-intro {
+  font-family: var(--font-body);
+  font-size: 18px;
+  color: var(--ink-light);
+  line-height: 1.7;
+  max-width: 600px;
+  margin-bottom: 56px;
+}
+.coaching-arc-wrap {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 56px;
+  align-items: center;
+}
+.coaching-arc-svg-wrap {
+  display: flex;
+  justify-content: center;
+}
+.coaching-arc-svg {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+/* Phase descriptions */
+.coaching-arc-phases {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.arc-phase {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+.arc-phase-dot {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  margin-top: 5px;
+}
+.arc-phase-dot-1 { background: var(--earth); }
+.arc-phase-dot-2 { background: var(--earth-dark); }
+.arc-phase-dot-3 { background: var(--sage); }
+.arc-phase-name {
+  font-family: var(--font-display);
+  font-size: 20px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.arc-phase-desc {
+  font-family: var(--font-body);
+  font-size: 16px;
+  color: var(--ink-light);
+  line-height: 1.8;
+}
+
+/* Structure section */
+.coaching-structure {
+  background: var(--sand);
+  padding: 72px 32px 48px;
+}
+.structure-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin: 40px 0 56px;
+}
+.structure-card {
+  background: var(--cream);
+  padding: 36px 28px;
+  border-radius: 8px;
+  border-top: 3px solid var(--sage);
+}
+.structure-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(28px, 3vw, 42px);
+  font-weight: 300;
+  color: var(--sage);
+  line-height: 1.1;
+  margin-bottom: 8px;
+}
+.structure-title {
+  font-family: var(--font-label);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 14px;
+}
+.structure-desc {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink-light);
+  line-height: 1.75;
+}
+
+/* Parker Palmer pull quote */
+.coaching-pull-quote {
+  max-width: 680px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 36px 0 0;
+  border-top: 1px solid rgba(122,81,153,0.15);
+}
+.coaching-pull-text {
+  font-family: var(--font-display);
+  font-size: clamp(20px, 2.2vw, 26px);
+  font-style: italic;
+  font-weight: 400;
+  color: var(--ink);
+  line-height: 1.6;
+  margin-bottom: 12px;
+}
+.coaching-pull-cite {
+  font-family: var(--font-label);
+  font-size: 10px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+  display: block;
+  margin-bottom: 20px;
+}
+.coaching-pull-context {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink-light);
+  font-style: italic;
+  line-height: 1.7;
+}
+
+/* Distinction section */
+.coaching-distinction {
+  background: var(--sand);
+  padding: 48px 32px 72px;
+}
+.coaching-distinction .section-label { color: var(--sage); }
+.distinction-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin: 36px 0 36px;
+}
+.distinction-card {
+  padding: 36px 32px;
+  border-radius: 8px;
+}
+.distinction-creactive {
+  background: var(--cream);
+  border: 1.5px solid rgba(122,81,153,0.3);
+}
+.distinction-therapy {
+  background: var(--cream);
+  border: 1.5px solid rgba(90,74,58,0.15);
+}
+.distinction-title {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--ink);
+  margin-bottom: 20px;
+}
+.distinction-creactive .distinction-title { color: var(--sage); }
+.distinction-therapy .distinction-title { color: var(--ink-light); }
+.distinction-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.distinction-list li {
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.6;
+  padding-left: 18px;
+  position: relative;
+}
+.distinction-creactive .distinction-list li { color: var(--ink-light); }
+.distinction-therapy .distinction-list li { color: var(--slate); }
+.distinction-creactive .distinction-list li::before { content: '→'; position: absolute; left: 0; color: var(--sage); }
+.distinction-therapy .distinction-list li::before { content: '·'; position: absolute; left: 0; color: var(--slate); }
+.distinction-note {
+  font-family: var(--font-body);
+  font-size: 16px;
+  font-style: italic;
+  color: var(--ink-light);
+  max-width: 600px;
+  line-height: 1.7;
+}
+
+/* Credentials */
+.coaching-credentials {
+  background: var(--cream);
+  padding: 72px 32px;
+}
+.coaching-credentials-inner {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 72px;
+  align-items: start;
+}
+.coaching-cred-aside { padding-top: 8px; }
+.coaching-cred-block { padding: 20px 0; }
+.coaching-cred-num {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 36px;
+  font-weight: 500;
+  color: var(--sage);
+  margin-bottom: 4px;
+}
+.coaching-cred-label {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--ink-light);
+  line-height: 1.4;
+}
+.coaching-cred-divider {
+  height: 1px;
+  background: rgba(122,81,153,0.15);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .coaching-problem-grid { grid-template-columns: 1fr; }
+  .coaching-gap-visual { display: none; }
+  .coaching-who-grid { grid-template-columns: 1fr; }
+  .coaching-arc-wrap { grid-template-columns: 1fr; }
+  .coaching-arc-svg-wrap { max-width: 320px; margin: 0 auto; }
+  .structure-grid { grid-template-columns: 1fr; }
+  .distinction-grid { grid-template-columns: 1fr; }
+  .coaching-credentials-inner { grid-template-columns: 1fr; gap: 40px; }
+}

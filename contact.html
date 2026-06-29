@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work With Me | Mahant Co</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,500;0,700;1,300;1,500&family=Crimson+Pro:ital,wght@0,300;0,400;0,600;1,400&family=Cinzel:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <span class="nav-logo-name">Mahant Co</span>
+        <span class="nav-logo-sub">Founded by Bharat Suri</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="advisory.html">Advisory</a></li>
+        <li><a href="coaching.html">Coaching</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" class="nav-active">Work With Me</a></li>
+      </ul>
+      <button class="nav-hamburger" aria-label="Open menu">&#9776;</button>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="contact-hero">
+    <div class="container contact-hero-inner">
+      <div class="contact-hero-text">
+        <h1 class="contact-heading">Let's talk.</h1>
+        <p class="contact-sub">The first conversation is just that: a conversation. No commitment, no pitch. Tell me what is going on and we will figure out together whether this is the right fit.</p>
+        <div class="contact-expect">
+          <p class="section-label">What happens next</p>
+          <ul class="expect-list">
+            <li>I read every message personally</li>
+            <li>You will hear back within two business days</li>
+            <li>If it is a fit, we schedule a no-pressure introductory call</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Netlify form -->
+      <form class="contact-form" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="contact" />
+        <p class="contact-form-hidden" aria-hidden="true">
+          <label>Do not fill this out: <input name="bot-field" /></label>
+        </p>
+
+        <div class="form-group">
+          <label class="form-label" for="name">Your name</label>
+          <input class="form-input" type="text" id="name" name="name" placeholder="How should I address you?" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email address</label>
+          <input class="form-input" type="email" id="email" name="email" placeholder="Where should I reply?" required />
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="interest">What brings you here?</label>
+          <select class="form-select" id="interest" name="interest">
+            <option value="" disabled selected>Choose one</option>
+            <option value="advisory">Advisory — Operating Model or AI Readiness</option>
+            <option value="coaching">Coaching — Creactive Coaching</option>
+            <option value="both">Both practices</option>
+            <option value="unsure">Not sure yet — just exploring</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">What is going on?</label>
+          <textarea class="form-textarea" id="message" name="message" rows="5" placeholder="No need to have it all figured out. Just share what is on your mind." required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary form-submit">Send message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Quiet footer note -->
+  <section class="contact-note">
+    <div class="container">
+      <p class="contact-note-text">Not ready to reach out yet? That is fine. Read more about the <a href="advisory.html">advisory practice</a> or the <a href="coaching.html">coaching work</a> and come back when you are ready.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <span class="footer-name">Mahant Co</span>
+        <span class="footer-sub">Founded by Bharat Suri</span>
+      </div>
+      <div class="footer-links">
+        <a href="advisory.html">Advisory</a>
+        <a href="coaching.html">Coaching</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Mahant Co. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
